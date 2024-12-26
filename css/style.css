@@ -1,0 +1,118 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* підключення шрифтів */
+/* @import url("fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@700&display=swap'); */
+
+
+/* Основні стилі */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    
+    
+}
+.wrapper {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    min-height: 100%;
+    background-color: rgb(11, 170, 149);
+    
+}
+
+[class*=__container] {
+    margin: 0 auto;
+    padding: 0px 15px;
+  }
+
+.menu {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    color: #ffffff;
+    margin: 0 auto;
+    padding: 5px 0 10px 0;
+    background: linear-gradient(180deg, rgb(11, 170, 149) 0%, rgb(3, 107, 110) 100%);
+    font-size: 34px;
+    font-family: "CoreSansC", serif;
+    font-weight: 800;
+    /* line-height: 1.47; */
+    letter-spacing: 0.21px;
+    text-align: center;
+    box-shadow: inset 0px 1px 6px,
+                0px 1px 6px;
+    
+
+
+}
+
+.menu a {
+    display: inline-block;
+    padding: 15px 0 ;
+    position: relative;
+    
+}
+
+.menu a:not(:last-child){
+    margin-right: 30px;
+}
+
+.menu a:after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: " ";
+    display: inline-block;
+    background: #FFFF;
+    width: 0%;
+    height: 3px;
+    transition: all 0.8s ease 0s;
+
+}
+
+.menu a:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+
+
+
+.footer {
+    background: linear-gradient(180deg, rgb(3, 107, 110)  0%, rgb(11, 170, 149) 100%);
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 28px;
+    font-family: "CoreSansC", serif;
+    font-weight: 600;
+    line-height: 1.19;
+    letter-spacing: 0.56px;
+    
+}
+
+
+p:not(:last-child) {
+    
+    margin-bottom: 30px;
+}
+img {
+    
+    max-width: 300px;
+    margin-right: 20px;
+}
+span {
+    vertical-align: bottom;
+}
+
+
+
+/* ====business===== */
+
